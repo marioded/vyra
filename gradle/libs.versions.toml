@@ -1,0 +1,26 @@
+[versions]
+spotless = "6.25.0"
+
+jetbrains-annotations = "26.1.0"
+lettuce = "7.7.0.RELEASE"
+jackson = "2.17.1"
+gson = "2.11.0"
+junit-jupiter = "5.10.0"
+testcontainers = "1.21.4"
+
+[libraries]
+jetbrains-annotations = { module = "org.jetbrains:annotations", version.ref = "jetbrains-annotations" }
+lettuce-core = { module = "io.lettuce:lettuce-core", version.ref = "lettuce" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+jackson-dataformat-smile = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-smile", version.ref = "jackson" }
+jackson-dataformat-cbor = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-cbor", version.ref = "jackson" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit-jupiter" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter" }
+testcontainers = { module = "org.testcontainers:testcontainers", version.ref = "testcontainers" }
+testcontainers-junit-jupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers" }
+
+[plugins]
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+nmcp = { id = "com.gradleup.nmcp.aggregation", version = "1.6.2" }
